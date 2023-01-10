@@ -8,6 +8,9 @@
   margin: 12.5rem auto 10.5rem;
   @include flex_justifyBetween;
 
+  @media (max-width: 789px) {
+  }
+
   .card {
     @include flex_centered;
     flex-direction: column;
