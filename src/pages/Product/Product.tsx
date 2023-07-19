@@ -87,7 +87,7 @@ const Product: React.FC = () => {
       <section className={styles.product_container}>
         <h6 onClick={back}>Go Back</h6>
         <div className={styles.product_details}>
-          <img src={`src${productDesktopImage}`} alt={product.name} />
+          <img src={`${productDesktopImage}`} alt={product.name} />
           <div className={styles.productCard_details}>
             {product.new && <h5>New Product</h5>}
             <h2>{product.name}</h2>
@@ -140,16 +140,16 @@ const Product: React.FC = () => {
         </div>
         <div className={styles.product_gallery}>
           <div className={styles.image_small}>
-            <img src={`src${galleryFirstDesktopImage}`} alt={product.name} />
-            <img src={`src${gallerySecondDesktopImage}`} alt={product.name} />
+            <img src={`${galleryFirstDesktopImage}`} alt={product.name} />
+            <img src={`${gallerySecondDesktopImage}`} alt={product.name} />
           </div>
-          <img src={`src${galleryThirdDesktopImage}`} alt={product.name} />
+          <img src={`${galleryThirdDesktopImage}`} alt={product.name} />
         </div>
         <div className={styles.product_alike}>
           <h2>You may also like</h2>
           <div className={styles.boxes}>
             <div className={styles.box}>
-              <img src={`src${imagesYouMayLikeOne}`} alt={product.name} />
+              <img src={`${imagesYouMayLikeOne}`} alt={product.name} />
               <h3>{product.others[0]?.name}</h3>
               <Button
                 btnText='See Product'
@@ -173,7 +173,7 @@ const Product: React.FC = () => {
               />
             </div>
             <div className={styles.box}>
-              <img src={`src${imagesYouMayLikeTwo}`} alt={product.name} />
+              <img src={`${imagesYouMayLikeTwo}`} alt={product.name} />
               <h3>{product.others[1]?.name}</h3>
               <Button
                 btnText='See Product'
@@ -197,7 +197,7 @@ const Product: React.FC = () => {
               />
             </div>
             <div className={styles.box}>
-              <img src={`src${imagesYouMayLikeThree}`} alt={product.name} />
+              <img src={`${imagesYouMayLikeThree}`} alt={product.name} />
               <h3>{product.others[2]?.name}</h3>
               <Button
                 btnText='See Product'

@@ -24,7 +24,7 @@ const Card: React.FC<CardProps> = ({
       className={styles.card_container}
       style={reverse ? { flexDirection: 'row-reverse' } : {}}
     >
-      <img src={`src${imgString}`} alt={title} />
+      <img src={`${imgString}`} alt={title} />
       <div className={styles.card_details}>
         {newProduct && <h6>New Product</h6>}
         <h2>{title}</h2>
