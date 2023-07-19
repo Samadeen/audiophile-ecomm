@@ -7,6 +7,7 @@ import Shop from '../../components/Shop/Shop';
 import Ad from '../../components/Ad/Ad';
 import Layout from '../../layouts/Layout/Layout';
 import { useShoppingCart } from '../../contexts/cart-context';
+import img from '../../assets/product-xx99-mark-two-headphones/desktop/image-product.jpg';
 
 interface Product {
   id: number;
@@ -87,7 +88,8 @@ const Product: React.FC = () => {
       <section className={styles.product_container}>
         <h6 onClick={back}>Go Back</h6>
         <div className={styles.product_details}>
-          <img src={`${productDesktopImage}`} alt={product.name} />
+          {/* <img src={`${productDesktopImage}`} alt={product.name} /> */}
+          <img src={`${img}`} alt={product.name} />
           <div className={styles.productCard_details}>
             {product.new && <h5>New Product</h5>}
             <h2>{product.name}</h2>
