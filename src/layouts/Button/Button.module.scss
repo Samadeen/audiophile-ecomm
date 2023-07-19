@@ -1,0 +1,45 @@
+@use '../../sass//utils/functions' as fn;
+@use '../../sass/global/colors' as color;
+@import '../../sass/utils/mixins';
+@import '../../sass/utils/breakpoints';
+
+.button {
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  border: none;
+  padding: 0.97rem 1.84rem;
+  font-family: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  @media (max-width: 770px) {
+    & {
+      padding: fn.rem(10) fn.rem(20);
+      font-size: 0.7rem;
+    }
+  }
+}
+
+.button.transparent {
+  border: 1px solid color.$black;
+  background-color: transparent;
+  color: color.$black;
+}
+
+.button.orange {
+  background-color: color.$orange;
+  color: color.$white;
+}
+
+.button.black {
+  background-color: color.$black;
+  color: color.$white;
+}
+
+.button.width {
+  display: block;
+  text-align: center;
+}
