@@ -75,7 +75,7 @@ const ThankYou: React.FC<ThankYouProps> = ({ handleToggle }) => {
                 <div className={styles.item_details} key={item.id}>
                   <div className={styles.item}>
                     <img
-                      src={`/src${item.image.desktop.slice(1)}`}
+                      src={`${item.image.desktop.slice(1)}`}
                       alt={item.name}
                     />
                     <div className={styles.name}>
