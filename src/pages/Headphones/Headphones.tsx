@@ -5,6 +5,7 @@ import Card from '../../components/Card/Card';
 import Shop from '../../components/Shop/Shop';
 import Ad from '../../components/Ad/Ad';
 import styles from './Headphones.module.scss';
+import img from '../../assets/product-xx99-mark-two-headphones/desktop/image-product.jpg';
 
 const Headphones = () => {
   const headphonesContext = useContext(HeadphonesContext);
@@ -22,7 +23,7 @@ const Headphones = () => {
         <h1>Headphones</h1>
         <Card
           description={headphones[2].description}
-          img={headphones[2].image.desktop}
+          img={img}
           reverse={false}
           title={headphones[2].name}
           newProduct={true}
