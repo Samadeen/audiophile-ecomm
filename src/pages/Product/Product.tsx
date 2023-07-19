@@ -49,7 +49,7 @@ const Product: React.FC = () => {
   const navigate = useNavigate();
   useEffect(() => {
     axios
-      .get<Product>(`http://localhost:3000/data/${id}`)
+      .get<Product>(`https://vivacious-red-horse.cyclic.app/data/${id}`)
       .then((res) => setProduct(res.data))
       .catch((err) => console.log(err));
   }, [id]);

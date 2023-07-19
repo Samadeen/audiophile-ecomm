@@ -69,7 +69,9 @@ export const SpeakersProvider: React.FC<SpeakersProviderProps> = ({
 
   useEffect(() => {
     axios
-      .get<Speaker[]>('http://localhost:3000/data?category=speakers')
+      .get<Speaker[]>(
+        'https://vivacious-red-horse.cyclic.app/data/?category=speakers'
+      )
       .then((res) => {
         setSpeakers(res.data);
       })

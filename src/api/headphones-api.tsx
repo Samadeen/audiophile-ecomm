@@ -71,7 +71,9 @@ export const HeadphonesProvider: React.FC<HeadphonesProviderProps> = ({
 
   useEffect(() => {
     axios
-      .get<Headphone[]>('http://localhost:3000/data?category=headphones')
+      .get<Headphone[]>(
+        'https://vivacious-red-horse.cyclic.app/data?category=headphones'
+      )
       .then((res) => {
         setHeadphones(res.data);
       })

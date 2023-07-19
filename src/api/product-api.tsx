@@ -55,7 +55,7 @@ export const ProductProvider: React.FC<ProductProviderProps> = ({
 
   useEffect(() => {
     axios
-      .get<Product[]>(`http://localhost:3000/data`)
+      .get<Product[]>(`https://vivacious-red-horse.cyclic.app/data`)
       .then((res) => setItems(res.data))
       .catch((err) => console.log(err));
   }, []);
