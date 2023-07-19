@@ -18,13 +18,13 @@ const Card: React.FC<CardProps> = ({
   id,
   reverse,
 }) => {
-  // const imgString = img.slice(1);
+  const imgString = img.slice(1);
   return (
     <section
       className={styles.card_container}
       style={reverse ? { flexDirection: 'row-reverse' } : {}}
     >
-      <img src={`${img}`} alt={title} />
+      <img src={`./src/${imgString}`} alt={title} />
       <div className={styles.card_details}>
         {newProduct && <h6>New Product</h6>}
         <h2>{title}</h2>
