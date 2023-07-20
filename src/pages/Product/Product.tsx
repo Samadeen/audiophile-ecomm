@@ -149,7 +149,7 @@ const Product: React.FC = () => {
           <h2>You may also like</h2>
           <div className={styles.boxes}>
             <div className={styles.box}>
-              <img src={`/${imagesYouMayLikeOne}`} alt={product.name} />
+              <img src={`${imagesYouMayLikeOne}`} alt={product.name} />
               <h3>{product.others[0]?.name}</h3>
               <Button
                 btnText='See Product'
@@ -173,7 +173,7 @@ const Product: React.FC = () => {
               />
             </div>
             <div className={styles.box}>
-              <img src={`/${imagesYouMayLikeTwo}`} alt={product.name} />
+              <img src={`${imagesYouMayLikeTwo}`} alt={product.name} />
               <h3>{product.others[1]?.name}</h3>
               <Button
                 btnText='See Product'
@@ -197,7 +197,7 @@ const Product: React.FC = () => {
               />
             </div>
             <div className={styles.box}>
-              <img src={`/${imagesYouMayLikeThree}`} alt={product.name} />
+              <img src={`${imagesYouMayLikeThree}`} alt={product.name} />
               <h3>{product.others[2]?.name}</h3>
               <Button
                 btnText='See Product'
