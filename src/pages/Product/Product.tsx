@@ -161,7 +161,7 @@ const Product: React.FC = () => {
               <Button
                 btnText='See Product'
                 orange={true}
-                product={`${
+                product={`/${
                   product.others[0]?.slug === 'xx99-mark-one-headphones'
                     ? 3
                     : product.others[0]?.slug === 'xx99-mark-two-headphones'
@@ -185,7 +185,7 @@ const Product: React.FC = () => {
               <Button
                 btnText='See Product'
                 orange={true}
-                product={`${
+                product={`/${
                   product.others[1]?.slug === 'xx99-mark-one-headphones'
                     ? 3
                     : product.others[1]?.slug === 'xx99-mark-two-headphones'
@@ -209,7 +209,7 @@ const Product: React.FC = () => {
               <Button
                 btnText='See Product'
                 orange={true}
-                product={`${
+                product={`/${
                   product.others[2]?.slug === 'xx99-mark-one-headphones'
                     ? 3
                     : product.others[2]?.slug === 'xx99-mark-two-headphones'
