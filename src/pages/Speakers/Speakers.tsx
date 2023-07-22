@@ -5,6 +5,7 @@ import Card from '../../components/Card/Card';
 import Shop from '../../components/Shop/Shop';
 import Ad from '../../components/Ad/Ad';
 import styles from './Speaker.module.scss';
+import Spinner from '../../components/Spinner/Spinner';
 
 const Speakers = () => {
   const speakersContext = useContext(SpeakersContext);
