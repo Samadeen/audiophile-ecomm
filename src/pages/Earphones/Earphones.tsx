@@ -11,7 +11,7 @@ const Earphones = () => {
 
   if (!earphonesContext) {
     // Optional: Render a loading state or handle the null case
-    return <div>Loading...</div>;
+    return <Spinner />;
   }
 
   const { earphones } = earphonesContext;
