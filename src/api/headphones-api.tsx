@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { createContext, useEffect, useState, ReactNode } from 'react';
+import Spinner from '../components/Spinner/Spinner';
 
 interface Headphone {
   id: number;
@@ -84,7 +85,7 @@ export const HeadphonesProvider: React.FC<HeadphonesProviderProps> = ({
 
   if (headphones === null) {
     // Optional: Render a loading state or handle the null case
-    return <div>Loading...</div>;
+    return <Spinner />;
   }
 
   return (
