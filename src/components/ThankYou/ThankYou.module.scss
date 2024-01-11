@@ -9,6 +9,8 @@
   z-index: 1;
   //   left: 50%;
   //   position: relative;
+  @media (max-width: 789px) {
+  }
   .backdrop {
     width: 100vw;
     background-color: #000000;
